@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Jira Comment Visibility",
+	"version": "0.1",
+	"description": "Automatically changes all new Jira comment Viewable by to a Default value",
+		"content_scripts": [
+			{
+			  "matches": ["*://*.atlassian.net/*"],
+			  "js": ["jquery-1.7.2.min.js", "jiraComment.js"]
+			}
+		],
+	"permissions": [
+		"tabs", "*://*.atlassian.net/*"
+	]
+}
